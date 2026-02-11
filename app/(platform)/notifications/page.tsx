@@ -19,6 +19,7 @@ import { Loading } from '@/components/ui/Loading';
 
 interface Notification {
     id: string;
+    user_id: string;
     title: string;
     message: string;
     type: string;
@@ -170,8 +171,8 @@ export default function NotificationsPage() {
                                 className={`group relative bg-white rounded-[24px] border border-slate-100 p-6 transition-all duration-300 hover:shadow-md hover:shadow-indigo-100/30 flex items-start gap-5 ${!notification.is_read ? 'border-l-4 border-l-brand-indigo shadow-sm' : ''}`}
                             >
                                 <div className={`shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center ${!notification.is_read
-                                        ? 'bg-brand-indigo/10 text-brand-indigo'
-                                        : 'bg-slate-50 text-slate-400'
+                                    ? 'bg-brand-indigo/10 text-brand-indigo'
+                                    : 'bg-slate-50 text-slate-400'
                                     }`}>
                                     {getIcon(notification.type)}
                                 </div>

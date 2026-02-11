@@ -1,6 +1,7 @@
 {
   "name": "infu-connect",
   "version": "1.0.0",
+  "type": "module",
   "description": "Influencer Connect",
   "main": "index.js",
   "directories": {
